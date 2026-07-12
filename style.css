@@ -34,7 +34,6 @@ a{
 }
 .nav-button{
     background: #1D4ED8;
-    color: white;
     border: none;
     padding: 14px 28px;
     border-radius: 8px;
@@ -48,17 +47,28 @@ a{
 header{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/banner.jpg');
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
+    
     
 }
 .header-content{
     color: white;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header-content h1{
+    font-size: 68px;
+    font-weight: 700;
 }
 .header-content button{
    
@@ -68,8 +78,10 @@ header{
     padding: 14px 28px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    width: auto;
+    font-size: 16px; 
+    width: 20%;
+    margin: 40%;
+    align-items: center;
 }
 .Speakers{
     font-size: 56px;
@@ -78,11 +90,30 @@ header{
 }
 .speaker-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.card{
+    width: 100%;
+}
+.card img{
+width: 100%;
+}
+.card-content h5{
+    color: #2563EB;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.card-content h3{
+    color: #111827;
+    font-size: 28px;
+    margin: 15px 0;
 }
 .frame-bg{
-    background-color: FFFFFF;
+    background-color: #FFFFFF;
 
 }
 .card-container{
@@ -90,7 +121,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-content: center;
-    margin: 50px;
+    margin: auto;
 }
 .card-container .price-card
 {
@@ -99,7 +130,7 @@ header{
     height: 420px;
     padding: 25px;
     border-radius: 10px;
-    /* border: 1px solid; */
+    
 
 }
 .card-container .pro{
@@ -190,3 +221,24 @@ header{
 .match-btn button:hover{
     background:#1d4ed8;
 }
+
+.footer{
+    background-color: #0D1B2A;
+    display: flex;
+    padding: 30px 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.footer-right a{
+    color: #FFFFFF;
+    display: flex;
+    gap: 40px;
+}
+/* .footer-right a{
+    color: white;
+    font-size: 16px;
+} */
