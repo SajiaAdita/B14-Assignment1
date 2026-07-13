@@ -7,7 +7,7 @@ Requirements:
  Add a section title and a short description explaining that AI helps attendees connect with mentors, developers, recruiters, and startup founders based on their interests.
  Create four modern cards using CSS Grid.
  Each card should include:
- An emoji or simple icon
+
  A title
  A short description
  Add one call-to-action button labeled "Find My AI Match".
